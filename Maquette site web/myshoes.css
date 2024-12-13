@@ -1,0 +1,114 @@
+body {
+    background-color: #333;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 12px;
+    color: white;
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+  }
+
+/* Barre de menu fixe, en haut, pleine largeur */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+  }
+  
+  /* Elements du menu */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  /* Changement de la couleur de fond de l'élément de menu survolé par la souris */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+ /* Marge pour ne pas superposer avc l'entête fixe de haut de page */
+  .main {
+    margin-top: 180px; 
+  } 
+
+
+ /* Grille de composition du haut de page */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo header'
+    'logo menu';
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
+  grid-template-columns: 200px 1fr
+}
+
+ /* Grille de composition du filtre */
+ .grid-filtre {
+  display: grid;
+  grid: template columns 300px auto;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
+  grid-template-columns: 200px 1fr
+}
+
+ /* Grille de ligne article */
+ .grid-article {
+  display: grid;
+  background-color: #555;
+  padding: 10px;
+  grid-template-columns: 200px 1fr 150px
+}
+
+/* Styles particuliers des différents éléments du haut de page */
+.item1 { grid-area: logo; display: flex; justify-content: left; }
+.item2 { grid-area: header; display: flex; justify-content: left; align-self: flex-end; color: rgb(170, 60, 78); font-family: 'Brush Script MT'; font-size: 50px; font-weight: bold; }
+.item3 { grid-area: menu; display: flex; justify-content: left; align-self: flex-end; background-color: #444;}
+
+/* Style du pied de page */
+.pied { background-color: #444; width: 100%; display: flex; justify-content: left; align-self: flex-end;}
+  /* Elements du menu */
+.pied a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  /* Changement de la couleur de fond de l'élément de menu survolé par la souris */
+  .pied a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .label {color: white;}
+  .td {color: white;}
+  .legend {color: white;}
+  .output {color: white; justify-content:center}
+  .tr {color: white; background-color: #555; padding: 30px 30px 30px 30px; border: #f2f2f2;}
+  #link {color: white;}

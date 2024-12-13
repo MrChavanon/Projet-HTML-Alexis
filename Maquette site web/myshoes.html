@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="myshoes.css">
+  <title>My shoes</title>
+  <link rel="icon" type="image/x-icon" href="myshoes.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="grid-container">
+            <div class="item1"><img src="myshoes.png" alt="Logo My Shoes" width="200" height="150"></div>
+            <div class="item2">&nbsp;&nbsp;Vente en ligne de chaussures stylées</div>
+            <div class="item3">
+                    <a href="#catalogue">Catalogue</a>
+                    <a href="#promotions">Promotions</a>
+                    <a href="#panier">Panier</a>
+            </div>
+        </div>  
+    </div>
+    <div class="main">
+        <div class="grid-filtre">
+            <div class="item4">
+                <form>
+                    <fieldset>
+                        <legend class="legend">
+                              <b>Recherche tout critère</b>
+                        </legend>
+                              <input type="text" id="filtre" onkeyup="rechercheMulti()" placeholder="critère" title="Recherche">
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                      <legend class="legend">
+                            <b>Type</b>
+                      </legend>
+                            <input type="checkbox" id="urbainH" name="Urbain Homme" value="urbainH" /> <label class="label" for="urbainH">Urbain Homme</label> </br>
+                            <input type="checkbox" id="urbainF" name="Urbain Femme" value="urbainF" /> <label class="label" for="urbainH">Urbain Femme</label> </br>
+                            <input type="checkbox" id="chicH" name="Chic Homme" value="chicH" /> <label class="label" for="chicH">Chic Homme</label> </br> 
+                            <input type="checkbox" id="chicF" name="Chic Femme" value="chicF" /> <label class="label" for="chicF">Chic Femme</label> </br> 
+                            <input type="checkbox" id="decontracteH" name="Décontracté Homme" value="decontracteH" /> <label class="label" for="decontracteH">Décontracté Homme</label> </br> 
+                            <input type="checkbox" id="decontracteF" name="Décontracté Femme" value="decontracteF" /> <label class="label" for="decontracteF">Décontracté Femme</label> </br> 
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <legend class="legend">
+                              <b>Matériau</b>
+                        </legend>
+                              <input type="checkbox" id="cuir" name="Cuir" value="cuir" /> <label class="label" for="cuir">Cuir</label> </br>
+                              <input type="checkbox" id="tissu" name="Tissu" value="tissu" /> <label class="label" for="tissu">Tissu</label> </br>
+                              <input type="checkbox" id="synthetique" name="Synthétique" value="synthetique" /> <label class="label" for="synthetique">Synthétique</label> </br> 
+                      </fieldset>
+                      <br/>
+                      <fieldset>
+                        <legend class="legend">
+                              <b>Couleur</b>
+                        </legend>
+                              <input type="checkbox" id="noir" name="Noir" value="noir" /> <label class="label" for="noir">Noir</label> </br>
+                              <input type="checkbox" id="blanc" name="Blanc" value="blanc" /> <label class="label" for="blanc">Blanc</label> </br>
+                              <input type="checkbox" id="rouge" name="Rouge" value="rouge" /> <label class="label" for="rouge">Rouge</label> </br> 
+                              <input type="checkbox" id="vert" name="Vert" value="vert" /> <label class="label" for="vert">Vert</label> </br> 
+                              <input type="checkbox" id="bleu" name="Bleu" value="bleu" /> <label class="label" for="bleu">Bleu</label> </br> 
+                              <input type="checkbox" id="jaune" name="Jaune" value="jaune" /> <label class="label" for="jaune">Jaune</label> </br> 
+                      </fieldset>
+                      <br/>
+                      <fieldset>
+                        <legend class="legend">
+                              <b>Marque</b>
+                        </legend>
+                              <input type="checkbox" id="nyke" name="Nyke" value="nyke" /> <label class="label" for="nyke">Nyke</label> </br>
+                              <input type="checkbox" id="adidos" name="Adidos" value="adidos" /> <label class="label" for="adidos">Adidos</label> </br>
+                              <input type="checkbox" id="pumbaa" name="Pumbaa" value="pumbaa" /> <label class="label" for="pumbaa">Pumbaa</label> </br> 
+                              <input type="checkbox" id="reboot" name="Reboot" value="reboot" /> <label class="label" for="reboot">Reboot</label> </br> 
+                      </fieldset>
+                      <br/>
+                      <fieldset>
+                        <legend class="legend">
+                              <b>Taille</b>
+                        </legend>
+                              <select> 
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                                <option value="42">42</option>
+                                <option value="44">44</option>
+                                <option value="46">46</option>
+                              </select>  
+                      </fieldset>
+                      <br/>
+                      <fieldset>
+                        <legend class="legend">
+                              <b>Prix</b>
+                        </legend>
+                              <input type="range" id="prix" name="Prix" value="0" min="0" max="300" step="10" oninput="this.nextElementSibling.value = this.value">
+                              <output class="output">0</output> 
+                              <label class="label" for="euros">€</label>
+                      </fieldset>
+                  </form>
+            </div>
+            <div class="item5">
+               <table id="resultats">
+                    <tr class="tr"><td class="td">rouge blanc cuir decontracte homme</td><td class="td"><div class="grid-container"><div><img src="c1.png" width="200" height="200"></div><div>blabla</div><div class="lien" align="center" width="150px"><a id="link" href="article.html">Détails</a></div></div></td></tr>
+                    <tr class="tr"><td class="td">bleu vert tissu homme chic</td><td class="td"><div class="grid-container"><div><img src="c2.png" width="200" height="200"></div><div>blabla</div><div class="lien" align="center" width="150px"><a id="link" href="article.html">Détails</a></div></div></td></tr>
+                    <tr class="tr"><td class="td">noir tissu urbain femme</td><td class="td"><div class="grid-container"><div><img src="c3.png" width="200" height="200"></div><div>blabla</div><div class="lien" align="center" width="150px"><a id="link" href="article.html">Détails</a></div></div></td></tr>
+                    <tr class="tr"><td class="td">nike synthetique femme blanc</td><td class="td"><div class="grid-container"><div><img src="c4.png" width="200" height="200"></div><div>blabla</div><div class="lien" align="center" width="150px"><a id="link" href="article.html">Détails</a></div></div></td></tr>
+                    <tr class="tr"><td class="td">adidos jaune urbain homme</td><td class="td"><div class="grid-container"><div><img src="c5.png" width="200" height="200"></div><div>blabla</div><div class="lien" align="center" width="150px"><a id="link" href="article.html">Détails</a></div></div></td></tr>
+               </table>
+            </div>
+        </div>  
+        
+    </div>
+    <br/> 
+</body>
+<footer>
+    <div class="pied">
+        <a href="#concept">Notre concept</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#cookies">Gérer mes cookies</a>
+        <a href="#mentions">Mentions légales</a>
+    </div>
+</footer>
+<script>
+    function rechercheMulti() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("filtre");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("resultats");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }      
+      }
+    }
+</script>
+</html> 
