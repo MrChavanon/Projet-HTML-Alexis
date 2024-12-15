@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/myshoes.css">
+  <title>My shoes</title>
+  <link rel="icon" type="image/x-icon" href="img/myshoes.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="grid-container">
+            <div class="item1"><img src="img/myshoes.png" alt="Logo My Shoes" width="200" height="150"></div>
+            <div class="item2">&nbsp;&nbsp;Vente en ligne de chaussures stylées</div>
+            <div class="item3">
+                    <a href="index.html">Catalogue</a>
+                    <a href="panier.html">Panier</a>
+            </div>
+        </div>  
+    </div>
+    <div class="main">
+            <p class="titre">Détails de l'article</p>
+            <table class="resultats">
+                    <tr class="tr">
+                        <td class="tag" width="0">Chic&nbsp;Homme<br/>Cuir<br/>Marron<br/>Pumbaa</td>
+                        <td class="td" width="100%">
+                                <div class="grid-article">
+                                    <div class="article"><a href="article.html"><img src="img/c1.png" width="100" height="100"></a></div>
+                                    <div class="commentaire">Avec ces mocassins rutilants, votre style affirmé vous permettra toutes les audaces!<br/>&nbsp;<br/>Tailles: du 40 au 46<br/>&nbsp;<br/>Prix: 120€</div>
+                                </div>
+                        </td>
+                    </tr>
+            </table>
+            <table><tr><td width="600">
+            <p>______________________________________________</p>
+            <p class="p">
+                <b>Dessus / Tige: </b>Cuir<br/>
+                <b>Doublure: </b>Imitation cuir / textile<br/>
+                <b>Semelle de propreté:</b>Combinaison cuir / textile</br/>
+                <b>Semelle d'usure: </b>Matière synthétique<br/>
+                <b>Épaisseur de la doublure: </b>Doublure protégeant du froid<br/>
+                <b>Matière: </b>Tressé<br/>
+                <br/>
+                <b>Evaluations clients :</b> 4.5/5 (453 avis)
+            </p>
+            <p>______________________________________________</p>
+            <label class="pointure" for="pointure">Votre pointure :&nbsp;</label>
+            <select> 
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+                <option value="44">44</option>
+                <option value="46">46</option>
+            </select><br/>&nbsp;<br/>
+            <form action="panier.html">
+                <input class="panier" type="submit" id="panier" value="Ajouter au panier">
+            </form>
+        </td>
+        <td>
+            <p>
+                <b>Partagez votre avis avec la communauté MyShoes !</b>
+              </p>
+              <textarea class="avis" name="avis_texte" rows="4" cols="50"></textarea>&nbsp;&nbsp;
+              <input type="submit" id="avis_bouton" value="Envoyer mon avis" onclick="publierAvis()">
+        </td></tr></table>
+    </div>
+    <br/> 
+</body>
+<footer>
+    <div class="pied">
+        <a href="#concept">Notre concept</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#cookies">Gérer mes cookies</a>
+        <a href="#mentions">Mentions légales</a>
+    </div>
+</footer>
+<script>
+    function publierAvis() { alert("Votre avis a été publié, merci !");}
+</script>    
+</html> 

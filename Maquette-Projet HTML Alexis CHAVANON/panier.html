@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/myshoes.css">
+  <title>My shoes</title>
+  <link rel="icon" type="image/x-icon" href="img/myshoes.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="grid-container">
+            <div class="item1"><img src="img/myshoes.png" alt="Logo My Shoes" width="200" height="150"></div>
+            <div class="item2">&nbsp;&nbsp;Vente en ligne de chaussures stylées</div>
+            <div class="item3">
+                    <a href="index.html">Catalogue</a>
+                    <a href="panier.html">Panier</a>
+            </div>
+        </div>  
+    </div>
+    <div class="main">
+        <p class="titre">Votre panier</p>
+        <p class="p"><b>1 Article(s)</b></p>
+        <table class="resultats">
+            <tr class="tr">
+                  <td class="tag" width="0">Chic&nbsp;Homme<br/>Cuir<br/>Marron<br/>Pumbaa</td>
+                  <td class="td" width="100%">
+                        <div class="grid-article">
+                              <div class="article"><a href="article.html"><img src="img/c1.png" width="100" height="100"></a></div>
+                              <div class="commentaire">Avec ces mocassins rutilants, votre style affirmé vous permettra toutes les audaces!<br/>&nbsp;<br/>Tailles: du 40 au 46<br/>&nbsp;<br/>Prix: 120€</div>
+                        </div>
+                  </td>
+            </tr>
+      </table>
+      <p class="p"><b>Total du panier : 120€ TTC&nbsp;</b>(frais de ports offerts à partir de 100€ commandés</p>
+      <form>
+        <table><tr><td>
+        <fieldset class="fielset">
+            <legend class="legend">
+                  <b>Adresse de livraison</b>
+            </legend>
+            <table class="adresse">
+                <tr>
+                    <td><label class="label" for="nom">Nom</label></td>
+                    <td><input type="text" id="nom" title="Nom" size="30"></td>
+                    <td><label class="label" for="prenom">Prénom</label></td>
+                    <td><input type="text" id="prenom" title="Prénom" size="30"></td>
+                </tr>
+                <tr>
+                    <td><Adresse l1 class="label" for="adresse_l1">Adresse L1</label></td>
+                    <td colspan="3"><input type="text" id="adresse_l1" title="Adresse L1" size="103"></td>
+                </tr>
+                <tr>
+                    <td><Adresse l2 class="label" for="adresse_l2">Adresse L2</label></td>
+                    <td colspan="3"><input type="text" id="adresse_l2" title="Adresse L2" size="103"></td>
+                </tr>
+                <tr>
+                    <td><label class="label" for="codePostal">Code Postal</label></td>
+                    <td><input type="text" id="codePostal" title="codePostal"size="10"></td>
+                    <td><label class="label" for="ville">Ville</label></td>
+                    <td><input type="text" id="ville" title="Ville" size="60"></td>
+                </tr>
+            </table>
+        </fieldset></td>
+        <td></td>
+        </tr></table>
+        <br/>&nbsp;<br/>
+        <input class="panier" type="submit" id="commande" value="Valider votre commande" onclick="commander()">
+      </form>
+    </div>
+    <br/> 
+</body>
+<footer>
+    <div class="pied">
+        <a href="#concept">Notre concept</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#cookies">Gérer mes cookies</a>
+        <a href="#mentions">Mentions légales</a>
+    </div>
+</footer>
+<script>
+    function commander() { alert("Merci pour votre commande !");}
+</script>
+</html> 

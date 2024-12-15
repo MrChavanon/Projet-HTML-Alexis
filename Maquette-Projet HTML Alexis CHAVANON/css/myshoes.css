@@ -9,12 +9,25 @@ body {
   
   p {
     font-family: verdana;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     gap: 10px;
     background-color: #333;
-    padding: 10px;
+    padding: 0px;
   }
+
+  .avis{
+    font-family: verdana;
+    font-size: 14px;
+    color: black;
+    gap: 10px;
+    background-color: white;
+    padding: 0px;
+  }
+
+.titre { color: rgb(170, 60, 78); font-family: 'Brush Script MT'; font-size: 30px; font-weight: bold; }
+
+.panier { background-color: rgb(170, 60, 78); font-size: 15px; font-weight: bold; color:white; padding: 5px; border-color:white ;}
 
 /* Barre de menu fixe, en haut, pleine largeur */
 .navbar {
@@ -39,6 +52,7 @@ body {
   }
   
   /* Changement de la couleur de fond de l'élément de menu survolé par la souris */
+
   .navbar a:hover {
     background: #ddd;
     color: black;
@@ -77,7 +91,7 @@ body {
   display: grid;
   background-color: #555;
   padding: 10px;
-  grid-template-columns: 200px 1fr 150px
+  grid-template-columns: 120px 1fr
 }
 
 /* Styles particuliers des différents éléments du haut de page */
@@ -108,7 +122,14 @@ body {
 
   .label {color: white;}
   .td {color: white;}
+  .tag {color: white;background-color: rgb(170, 60, 78);padding-left: 10px;padding-right: 10px;font-size: 12px;}
   .legend {color: white;}
-  .output {color: white; justify-content:center}
-  .tr {color: white; background-color: #555; padding: 30px 30px 30px 30px; border: #f2f2f2;}
-  #link {color: white;}
+  .output {color: white; justify-content:center;}
+  .tr {background-color: #eee;}
+  .table {width: 100%;}
+  .resultats {width: 100%;border-spacing: 20px;}
+  .article {width:100px; height:100px; display: flex; justify-content: left; align-self: flex-end;}
+  .commentaire {width:100%; height:100px; display: flex; justify-content: left; align-self: flex-end;}
+  .pointure {color: white;}
+  .fieldset{display: inline;}
+  .adresse {border-spacing: 10px;}
